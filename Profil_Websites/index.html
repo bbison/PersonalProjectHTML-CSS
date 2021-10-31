@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Profil</title>
+
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<style>
+    .navitem{
+        background-color: black;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: max-content;
+        width: 80%;
+        margin: auto;
+    }
+    .navbaritem{
+        color: white;
+        text-align: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: cursive;
+    }
+    .navbaritem:hover{
+        background-color: rgb(48, 43, 43);
+    }
+    .profile{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: max-content;
+        width: 80%;
+        margin: auto;
+        margin-top: 3%;
+    }
+    img{
+        width: 65%; 
+        border: 2px solid black;
+        color: rgb(133, 128, 128);
+        margin-left:5%;
+        margin-right: 5%;
+      
+    }
+        
+    h3{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: right;
+        padding-right: 2%;
+    }
+    p{
+        margin-top: 0%; 
+        color: rgb(226, 180, 30);
+    }
+    p.deskripsi{color: black; margin-top: 10%; text-align: justify;padding-left: 25%; padding-right: 5%; }
+    .skill > h3{
+        text-align: center;
+
+    }
+    p.adres{color: white;}
+    .img_profile{
+        margin: auto;
+    }
+
+    .value{
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 120px;
+        width: 80%;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.788);
+        margin-top: 5%;
+    }
+    p>img{
+        width: 12%;
+    }
+   
+    p>img.map{width: 7%;padding-top: 1%;}
+    .detail{ margin: auto; padding-left: 10%;}
+    .adres{margin: auto;padding-left: 10%;}
+   
+
+    @media(max-width:992px){
+        .profile{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto;
+        }
+        .deskripsi> h3,p{font-size: 20px;}
+        img{padding-top: 0%; margin-top: 0%;}
+        p.deskripsi{padding-left: 10%;}
+        h3{font-size: 20px;}
+        .value{ background-color: rgb(0, 0, 0); height: 80px;}
+        a.detail, p.adres{color: rgb(255, 255, 255) ; font-size: 14px;}
+        .detail, .adres{margin-top: 5%;} 
+
+    }
+
+    @media(max-width:768px){
+        .profile{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto;
+        }
+        .deskripsi> h3,p{font-size: 18px;}
+        img{padding-top: 0%; margin-top: 0%;}
+        p.deskripsi{padding-left: 10%;}
+        h3{font-size: 18px;}
+        .value{ background-color: rgb(0, 0, 0); height: 80px;}
+        a.detail, p.adres{color: rgb(255, 255, 255) ; font-size: 12px;}
+        .detail, .adres{margin-top: 5%;} 
+        
+        }
+        
+
+
+
+    @media(max-width:600px){
+        .profile{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto;
+        }
+        .deskripsi> h3,p{font-size: 12px;}
+        img{padding-top: 0%; margin-top: 0%;}
+        p.deskripsi{padding-left: 10%;}
+        h3{font-size: 12px;}
+        .value{
+            display: block;
+            background-color: white;
+        }
+        a.detail, p.adres{color: black;}
+        .detail, .adres{margin-top: 5%;} 
+
+        }
+     
+
+ 
+
+
+
+</style>
+
+<body>
+    <nav class="nav">
+        <div class="navitem">
+            <div class="navbaritem"><a href="#">Home</a></div>
+            <div class="navbaritem"><a href="portofolio/index.html">Portofolio</a></div>
+            <div class="navbaritem"><a href="exp/index.html">Experience</a></div>
+            <div class="navbaritem"><a href="about/index.html">About</a></div>
+        </div>
+    </nav>
+    <div class="profile">
+        <div class="deskripsi">
+            <h3>Bagas Wibisono <p>Web Developer</p></h3>
+            <p class="deskripsi"  >"Personality yang antusias dan bermotivasi tinggi dengan kemampuan kepemimpinan, inisiatif dan mencari tantangan baru. <br>
+               <br> Terampil sebagai Front-end developer(HTML, CSS, Java Script)"</p>
+           
+        </div>
+        <div class="img_profile"><img src="img/foto_profile.jpeg" alt="" style="display: block; margin: auto;"></div>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress">
+                <div class="progress-bar w-75"  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="10">75%</div>
+              </div>
+            <h3>CSS</h3>
+            <div class="progress">
+                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            <h3>Java Script</h3>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+        </div>
+    </div>
+
+    <div class="value">
+        <div class="detail">
+            <p class="detail"><img style="border: none;" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt=""><a class="detail" href="https://mail.google.com/mail">bbison2002@gmail.com</a></p>
+         </div>
+       <div class="adres" > <p class="adres"><img class="map" style="border: none;" src="https://www.freepnglogos.com/uploads/lokasi-logo-png/lokasi-logo-location-poi-pin-vector-graphic-pixabay-30.png" alt="">Magelang, Central Java</p></div>
+    </div>
+    
+
+    
+</body>
+</html>
